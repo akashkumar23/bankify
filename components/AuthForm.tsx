@@ -23,6 +23,7 @@ import { authFormSchema } from '@/lib/utils'
 import { Loader2 } from 'lucide-react'
 import { redirect, useRouter } from 'next/navigation'
 import { getLoggedInUser, signIn, signUp } from '@/lib/actions/user.actions'
+import PlaidLink from './PlaidLink'
 
 
 const AuthForm =  ({ type }:{ type:string }) => {
@@ -46,8 +47,23 @@ const AuthForm =  ({ type }:{ type:string }) => {
           setIsLoading(true);
           try{
             // Sign up with appwrite & create plaid token
+
+              
+
             if(type === 'sign-up'){
-              const newUser = await signUp(data);
+              const userData = {
+                firstName: data.firstName!,
+                lastName: data.lastName!,
+                address1: data.address1!,
+                city: data.city!,
+                state: data.state!,
+                postalCode: data.postalCode!,
+                dateOfBirth: data.dateOfBirth!,
+                ssn: data.ssn!,
+                email: data.email,
+                password: data.password
+              }
+              const newUser = await signUp(userData);
               setUser(newUser);
             }
             if(type==='sign-in'){
@@ -98,9 +114,9 @@ const AuthForm =  ({ type }:{ type:string }) => {
 
         {user ? (
             <div>
-                {/* PlaidLink */}
+                <PlaidLink user={user} variant='primary'/>
             </div>
-        ):(
+         ):( 
             <>
                 {/* here we implement form */}
                 <Form {...form}>
@@ -119,7 +135,7 @@ const AuthForm =  ({ type }:{ type:string }) => {
                           <CustomInput control={form.control} name='state' placeholder='Ex: Jharkhand' label='State' />
                         </div>
                         <div className='flex gap-4'>
-                          <CustomInput control={form.control} name='pincode' placeholder='Ex: 826004' label='Pin Code' />
+                          <CustomInput control={form.control} name='postalCode' placeholder='Ex: 826004' label='Pin Code' />
                           <CustomInput control={form.control} name='ssn' placeholder='Ex: 1234' label='SSN' />
                         </div>
                         <CustomInput control={form.control} name='dateOfBirth' placeholder='Ex: 23-03-2002' label='Date of Birth' />
@@ -159,7 +175,7 @@ const AuthForm =  ({ type }:{ type:string }) => {
             </>
         )
         
-        }
+        } 
 
     </section>
   )
