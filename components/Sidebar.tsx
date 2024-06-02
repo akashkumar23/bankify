@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import Footer from './Footer'
+import PlaidLink from './PlaidLink'
 
 const Sidebar = ({user}: any) => {
 
@@ -60,6 +61,7 @@ const Sidebar = ({user}: any) => {
                 )
             })}
             {/* USER */}
+            <PlaidLink user={user}/>
         </nav>
         {/* FOOTER */}
         < Footer user={user} type='desktop' />
