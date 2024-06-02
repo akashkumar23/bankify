@@ -10,7 +10,7 @@ const PaymentTransfer = async() => {
 
   const loggedIn = await getLoggedInUser();
   const accounts = await getAccounts({
-    userId: loggedIn.$id
+    userId: loggedIn?.$id
   })
 
   if(!accounts){
