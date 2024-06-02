@@ -71,4 +71,4 @@ const Sidebar = ({user}: any) => {
   )
 }
 
-export default Sidebar
+export default Sidebar;
