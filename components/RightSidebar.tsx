@@ -41,7 +41,7 @@ const RightSidebar = ({user, transactions, banks}: any) => {
                     <BankCard
                         key={banks[0].$id}
                         account={banks[0]}
-                        userName={`${user?.firstNamename} ${user?.lastName}`}
+                        userName={`${user?.firstName} ${user?.lastName}`}
                         showBalance={false}
                     />
                 </div>
@@ -50,7 +50,7 @@ const RightSidebar = ({user, transactions, banks}: any) => {
                         <BankCard
                             key={banks[1].$id}
                             account={banks[1]}
-                            userName={`${user?.firstNamename} ${user?.lastName}`}
+                            userName={`${user?.firstName} ${user?.lastName}`}
                             showBalance={false}
                         />
                     </div>

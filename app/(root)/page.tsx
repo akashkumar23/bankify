@@ -20,11 +20,9 @@ const Home = async ({searchParams: {id, page}} : SearchParamProps) => {
   const appwriteItemId = (id as string) || accountsData[0]?.appwriteItemId;
 
   const account = await getAccount({ appwriteItemId })
-
+  //     const temp = account.transactions;
   // console.log({
-  //   appwriteItemId,
-  //   accountsData,
-  //   account
+  //   temp
   // })
 
   return (
@@ -54,7 +52,7 @@ const Home = async ({searchParams: {id, page}} : SearchParamProps) => {
         />
       </div>
       <RightSidebar
-        users={loggedIn}
+        user={loggedIn}
         transactions={accounts?.transactions}
         // transactions={[]}
         // banks={[{currentBalance: 125.56}, {currentBalance:150.70}]}
