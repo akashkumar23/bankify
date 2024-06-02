@@ -22,12 +22,12 @@ const Sidebar = ({user}: any) => {
             >
                 <Image
                     src='/icons/logo.svg'
-                    width={34}
-                    height={34}
+                    width={54}
+                    height={54}
                     alt='logo'
                     className='size-[34px] max-xl:size-14'
                 />
-                <h1 className='sidebar-logo'>Horizon</h1>
+                <h1 className='sidebar-logo'>Bankify</h1>
             </Link>
 
             {sidebarLinks.map((item)=>{
