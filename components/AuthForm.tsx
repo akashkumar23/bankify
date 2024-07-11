@@ -96,7 +96,7 @@ const AuthForm =  ({ type }:{ type:string }) => {
                     width={34}
                     height={34}
                 />
-                <h1 className='text-26 font-ibm-plex-serif font-bold text-black-1'>Horizon</h1>
+                <h1 className='text-26 font-ibm-plex-serif font-bold text-black-1'>Bankify</h1>
             </Link>
             <div className='flex flex-col gap-1 md:gap-3'>
               <h1 className='text-24 lg:text-36 font-semibold text-gray-900'>
@@ -135,8 +135,8 @@ const AuthForm =  ({ type }:{ type:string }) => {
                           <CustomInput control={form.control} name='state' placeholder='Ex: NY' label='State' />
                         </div>
                         <div className='flex gap-4'>
-                          <CustomInput control={form.control} name='postalCode' placeholder='Ex: 12345' label='Pin Code' />
-                          <CustomInput control={form.control} name='ssn' placeholder='Ex: 077431234' label='SSN' />
+                          <CustomInput control={form.control} name='postalCode' placeholder='Ex: 12345 (5 digit number)' label='Pin Code' />
+                          <CustomInput control={form.control} name='ssn' placeholder='Ex: used this sample SSN (077431234)' label='SSN' />
                         </div>
                         <CustomInput control={form.control} name='dateOfBirth' placeholder='Ex: YYYY-MM-DD' label='Date of Birth' />
                       </>

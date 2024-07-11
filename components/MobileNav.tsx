@@ -39,7 +39,7 @@ const MobileNav = ({ user }: any) => {
                     width={34}
                     height={34}
                 />
-                <h1 className='text-26 font-ibm-plex-serif font-bold text-black-1'>Horizon</h1>
+                <h1 className='text-26 font-ibm-plex-serif font-bold text-black-1'>Bankify</h1>
             </Link>
             <div className='mobilenav-sheet'>
                 <SheetClose asChild>
