@@ -32,7 +32,7 @@ It also contains a payment transfer page where we can make transfers to other ac
        Provides a user-friendly interface for managing transactions
 - Plaid : For payments (it works for payments for no matter where you are in the world). It is            a stripe alternative used by a well known financial giant Robin Hood. We are only               using the test mode for the application.
       - Plaid is all about connecting app with bank accounts, making it easy to access info and         do things like verify identity. It is like a middle man making it easy for the apps and         banks to share information securly.
-      - ![Alt text](1_MRF0QYj5zOYqp-HmoQgAUg.png)
+      - ![Alt text](images/1_MRF0QYj5zOYqp-HmoQgAUg.png)
     
 
 - Sentry : 
