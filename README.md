@@ -44,27 +44,37 @@ It also contains a payment transfer page where we can make transfers to other ac
 
 ## Screenshots
 
-
+- This is the Sign-up page.
 ![Alt text](images/1.png)
 
+-This is the Sign-in Page
 ![Alt text](images/2.png)
 
+- After Sign-up. Now Link the bank-account
 ![Alt text](images/3.png)
 
+- Here Plaid comes in action
 ![Alt text](images/4.png)
 
+- Choose your Bank
 ![Alt text](images/5.png)
 
+- Fill your credentials
 ![Alt text](images/6.png)
 
+- Select Account
 ![Alt text](images/7.png)
 
+- Now Boom! This is the Home page
 ![Alt text](images/8.png)
 
+- My Banks Page : this page shows all the linked account
 ![Alt text](images/9.png)
 
+- Transfer Fund : Enter the Amount , Receiver's email id and Plaid Shareable id  
 ![Alt text](images/10.png)
 
+- Transaction History : User can see its transaction history and transaction status
 ![Alt text](images/11.png)
 
 
