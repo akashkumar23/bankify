@@ -5,6 +5,8 @@ A platform that connects to multiple bank accounts, displays transactions in Rea
 A page where we can see all connected banks and transactions history.
 It also contains a payment transfer page where we can make transfers to other accounts on the platform.
 
+## Folder Structure
+![Alt text](images/folder.png)
 
 ## Tech Stack 
 
